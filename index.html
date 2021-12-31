@@ -5,9 +5,221 @@
 	<title>Clock</title>
 
 	<script src="https://cdn.tailwindcss.com"></script>
+
+	<style>
+	@keyframes move {
+	    100% {
+	        transform: translate3d(0, 0, 1px) rotate(360deg);
+	    }
+	}
+
+	.backgroundBubbles {
+	    position: fixed;
+	    width: 100vw;
+	    height: 100vh;
+	    top: 0;
+	    left: 0;
+	    background: #3E1E68;
+	    overflow: hidden;
+	}
+
+	.backgroundBubbles span {
+	    width: 46vmin;
+	    height: 46vmin;
+	    border-radius: 46vmin;
+	    backface-visibility: hidden;
+	    position: absolute;
+	    animation: move;
+	    animation-duration: 45;
+	    animation-timing-function: linear;
+	    animation-iteration-count: infinite;
+	}
+
+
+	.backgroundBubbles span:nth-child(0) {
+	    color: #FFACAC;
+	    top: 23%;
+	    left: 15%;
+	    animation-duration: 7s;
+	    animation-delay: -23s;
+	    transform-origin: -13vw -8vh;
+	    box-shadow: -92vmin 0 11.698254030643106vmin currentColor;
+	}
+	.backgroundBubbles span:nth-child(1) {
+	    color: #583C87;
+	    top: 43%;
+	    left: 50%;
+	    animation-duration: 13s;
+	    animation-delay: -38s;
+	    transform-origin: -5vw -10vh;
+	    box-shadow: 92vmin 0 12.013975940378288vmin currentColor;
+	}
+	.backgroundBubbles span:nth-child(2) {
+	    color: #583C87;
+	    top: 24%;
+	    left: 93%;
+	    animation-duration: 21s;
+	    animation-delay: -24s;
+	    transform-origin: 12vw -18vh;
+	    box-shadow: -92vmin 0 12.421986992480536vmin currentColor;
+	}
+	.backgroundBubbles span:nth-child(3) {
+	    color: #FFACAC;
+	    top: 61%;
+	    left: 81%;
+	    animation-duration: 52s;
+	    animation-delay: -10s;
+	    transform-origin: -4vw -23vh;
+	    box-shadow: -92vmin 0 12.362425052808785vmin currentColor;
+	}
+	.backgroundBubbles span:nth-child(4) {
+	    color: #FFACAC;
+	    top: 53%;
+	    left: 20%;
+	    animation-duration: 54s;
+	    animation-delay: -40s;
+	    transform-origin: -24vw 20vh;
+	    box-shadow: 92vmin 0 11.994956805463143vmin currentColor;
+	}
+	.backgroundBubbles span:nth-child(5) {
+	    color: #E45A84;
+	    top: 23%;
+	    left: 97%;
+	    animation-duration: 33s;
+	    animation-delay: -8s;
+	    transform-origin: -23vw 21vh;
+	    box-shadow: -92vmin 0 11.627743698480224vmin currentColor;
+	}
+	.backgroundBubbles span:nth-child(6) {
+	    color: #583C87;
+	    top: 72%;
+	    left: 82%;
+	    animation-duration: 37s;
+	    animation-delay: -33s;
+	    transform-origin: 12vw -20vh;
+	    box-shadow: 92vmin 0 11.545692401274549vmin currentColor;
+	}
+	.backgroundBubbles span:nth-child(7) {
+	    color: #FFACAC;
+	    top: 6%;
+	    left: 91%;
+	    animation-duration: 42s;
+	    animation-delay: -20s;
+	    transform-origin: 3vw 3vh;
+	    box-shadow: -92vmin 0 11.679964921000103vmin currentColor;
+	}
+	.backgroundBubbles span:nth-child(8) {
+	    color: #FFACAC;
+	    top: 24%;
+	    left: 23%;
+	    animation-duration: 39s;
+	    animation-delay: -48s;
+	    transform-origin: 14vw 10vh;
+	    box-shadow: -92vmin 0 11.607520156927837vmin currentColor;
+	}
+	.backgroundBubbles span:nth-child(9) {
+	    color: #583C87;
+	    top: 16%;
+	    left: 56%;
+	    animation-duration: 8s;
+	    animation-delay: -25s;
+	    transform-origin: 20vw -7vh;
+	    box-shadow: -92vmin 0 11.77189969813334vmin currentColor;
+	}
+	.backgroundBubbles span:nth-child(10) {
+	    color: #E45A84;
+	    top: 10%;
+	    left: 92%;
+	    animation-duration: 19s;
+	    animation-delay: -40s;
+	    transform-origin: 25vw 22vh;
+	    box-shadow: 92vmin 0 11.55272723531033vmin currentColor;
+	}
+	.backgroundBubbles span:nth-child(11) {
+	    color: #E45A84;
+	    top: 40%;
+	    left: 5%;
+	    animation-duration: 51s;
+	    animation-delay: -9s;
+	    transform-origin: -14vw 15vh;
+	    box-shadow: -92vmin 0 11.83596857420238vmin currentColor;
+	}
+	.backgroundBubbles span:nth-child(12) {
+	    color: #FFACAC;
+	    top: 40%;
+	    left: 4%;
+	    animation-duration: 47s;
+	    animation-delay: -16s;
+	    transform-origin: 7vw 6vh;
+	    box-shadow: 92vmin 0 12.246220650093816vmin currentColor;
+	}
+	.backgroundBubbles span:nth-child(13) {
+	    color: #E45A84;
+	    top: 89%;
+	    left: 81%;
+	    animation-duration: 35s;
+	    animation-delay: -35s;
+	    transform-origin: -14vw -12vh;
+	    box-shadow: 92vmin 0 12.065460754450626vmin currentColor;
+	}
+	.backgroundBubbles span:nth-child(14) {
+	    color: #E45A84;
+	    top: 51%;
+	    left: 82%;
+	    animation-duration: 27s;
+	    animation-delay: -15s;
+	    transform-origin: -7vw -21vh;
+	    box-shadow: 92vmin 0 11.79450142652932vmin currentColor;
+	}
+
+
+
+	.backgroundBubbles {
+	    background: linear-gradient(55deg, #7a0096, #00c5f2);
+	    background-size: 400% 400%;
+
+	    -webkit-animation: AnimationName 19s ease infinite;
+	    -moz-animation: AnimationName 19s ease infinite;
+	    animation: AnimationName 19s ease infinite;
+	}
+
+	@-webkit-keyframes AnimationName {
+	    0%{background-position:0% 50%}
+	    50%{background-position:100% 51%}
+	    100%{background-position:0% 50%}
+	}
+	@-moz-keyframes AnimationName {
+	    0%{background-position:0% 50%}
+	    50%{background-position:100% 51%}
+	    100%{background-position:0% 50%}
+	}
+	@keyframes AnimationName {
+	    0%{background-position:0% 50%}
+	    50%{background-position:100% 51%}
+	    100%{background-position:0% 50%}
+	}
+	</style>
 </head>
 <body class="h-screen bg-black text-white flex">
-	<h1 id="clock" class="tabular-nums tracking-wider text-9xl font-bold m-auto">00:00:00</h1>
+	<div class="backgroundBubbles z-0 opacity-50">
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+		<span></span>
+	</div>
+
+	<h1 id="clock" class="tabular-nums tracking-wider text-9xl font-bold m-auto z-50">00:00:00</h1>
 
 	<script>
 		function updateTime() {
